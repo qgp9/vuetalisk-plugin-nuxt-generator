@@ -142,4 +142,4 @@ function loadNuxt (root) {
 }
 
 module.exports = NuxtGenerator
-exports.install = function () { return new NuxtGenerator() }
+NuxtGenerator.install = function () { return new NuxtGenerator() }
