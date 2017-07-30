@@ -1,0 +1,1 @@
+# vuetalisk-plugin-nuxt-generator
