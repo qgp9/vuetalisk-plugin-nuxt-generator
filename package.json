@@ -1,0 +1,25 @@
+{
+  "name": "vuetalisk-plugin-nuxt-generator",
+  "version": "0.0.1",
+  "description": "Vuetalisk plugin for Nuxt",
+  "main": "nuxt-generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/qgp9/vuetalisk-plugin-nuxt-generator.git"
+  },
+  "keywords": [
+    "vuetalisk"
+  ],
+  "author": "qgp9 <pauljang9@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qgp9/vuetalisk-plugin-nuxt-generator/issues"
+  },
+  "homepage": "https://github.com/qgp9/vuetalisk-plugin-nuxt-generator#readme",
+  "dependencies": {
+    "nuxt": "^1.0.0-rc3"
+  }
+}
