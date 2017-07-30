@@ -1,6 +1,6 @@
 {
   "name": "vuetalisk-plugin-nuxt-generator",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vuetalisk plugin for Nuxt",
   "main": "nuxt-generator.js",
   "scripts": {
