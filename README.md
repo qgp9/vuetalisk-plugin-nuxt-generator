@@ -1,1 +1,1 @@
-# vuetalisk-plugin-nuxt-generator
+# [WIP] vuetalisk-plugin-nuxt-generator
