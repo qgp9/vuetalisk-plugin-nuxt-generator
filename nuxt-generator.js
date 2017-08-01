@@ -95,7 +95,7 @@ class NuxtGenerator {
       if (doRender) {
         if (!nuxt) {
           log('Load Nuxt')
-          const {Nuxt, nuxtOpts} = loadNuxt(h.root)
+          const {Nuxt, nuxtOpts} = loadNuxtCompact(h.root)
           nuxt = new Nuxt(nuxtOpts)
         } 
 
@@ -125,6 +125,20 @@ async function scanDir (fullpath, time) {
     }
   }
   return false
+}
+
+function loadNuxtCompact(root) {
+  var nuxtOpts = {}
+  var nuxtConfigFile = path.resolve(root, 'nuxt.config.js')
+  if (fs.existsSync(nuxtConfigFile)) {
+    nuxtOpts = require(nuxtConfigFile)
+  }
+  if (typeof nuxtOpts.rootDir !== 'string') {
+    nuxtOpts.rootDir = root
+  }
+  nuxtOpts.dev = false // Force production mode (no webpack middleware called)
+  const {Nuxt} = require('nuxt/dist/core.js')
+  return {Nuxt, nuxtOpts}
 }
 
 function loadNuxt (root) {
